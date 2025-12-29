@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Grid Practice</title>
+</head>
+
+<body class="min-h-screen bg-gray-100 grid grid-rows-[auto_1fr_auto]">
+
+  <!-- HEADER -->
+  <header class="bg-indigo-600 text-white p-5 text-xl font-bold">
+    HEADER (Navbar)
+  </header>
+
+  <!-- MAIN AREA -->
+  <main class="grid grid-cols-12 gap-4 p-4">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="col-span-12 md:col-span-2 bg-blue-200 p-4">
+      Sidebar Left  
+      <br/>Menu
+    </aside>
+
+    <!-- CENTER CONTENT -->
+    <section class="col-span-12 md:col-span-8 grid grid-rows-[auto_1fr_auto] gap-4">
+
+      <!-- HERO -->
+      <div class="bg-pink-200 p-6 text-center">
+        Hero Section (row 1)
+      </div>
+
+      <!-- CARDS (NESTED GRID) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-white p-4 shadow">Card 1</div>
+        <div class="bg-white p-4 shadow">Card 2</div>
+        <div class="bg-white p-4 shadow">Card 3</div>
+        <div class="bg-white p-4 shadow col-span-1 sm:col-span-2">
+          Card 4 (col-span)
+        </div>
+      </div>
+
+      <!-- CONTENT FOOTER -->
+      <div class="bg-yellow-200 p-4">
+        Content Footer / CTA
+      </div>
+
+    </section>
+
+    <!-- RIGHT SIDEBAR (ROW SPAN) -->
+    <aside class="col-span-12 md:col-span-2 bg-green-200 p-4 md:row-span-2">
+      Right Sidebar  
+      <br/>Ads / Info
+    </aside>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-800 text-white p-4 text-center">
+    FOOTER
+  </footer>
+
+</body>
+</html>
