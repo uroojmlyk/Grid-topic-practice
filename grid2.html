@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfolio Grid Masonry Style</title>
+</head>
+<body class="bg-gray-100 p-6">
+    
+    <div class="max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold text-center mb-12 text-gray-800">My Portfolio</h1>
+        
+        <!-- Complex Masonry-like Grid using row-span -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[200px]">
+            
+            <!-- Project 1 - Tall item -->
+            <div class="row-span-2 bg-gradient-to-br from-blue-400 to-cyan-300 rounded-2xl p-6 shadow-xl">
+                <h3 class="text-2xl font-bold mb-3 text-white">E-commerce Website</h3>
+                <p class="text-white mb-4">Full-stack development with React and Node.js. Complex grid layouts for product displays.</p>
+                <div class="grid grid-cols-2 gap-2 mt-4">
+                    <span class="bg-white text-blue-600 px-3 py-1 rounded-full text-sm text-center">React</span>
+                    <span class="bg-white text-blue-600 px-3 py-1 rounded-full text-sm text-center">Tailwind</span>
+                </div>
+            </div>
+            
+            <!-- Project 2 - Regular item -->
+            <div class="bg-gradient-to-br from-purple-400 to-pink-300 rounded-2xl p-6 shadow-xl">
+                <h3 class="text-xl font-bold mb-2 text-white">Mobile App UI</h3>
+                <p class="text-white">Figma design to React Native implementation.</p>
+            </div>
+            
+            <!-- Project 3 - Wide item (spans 2 columns on medium+) -->
+            <div class="md:col-span-2 lg:col-span-1 bg-gradient-to-br from-green-400 to-teal-300 rounded-2xl p-6 shadow-xl">
+                <h3 class="text-xl font-bold mb-2 text-white">Dashboard Analytics</h3>
+                <p class="text-white">Real-time data visualization with complex grids.</p>
+            </div>
+            
+            <!-- Project 4 - Regular item -->
+            <div class="bg-gradient-to-br from-orange-400 to-red-300 rounded-2xl p-6 shadow-xl">
+                <h3 class="text-xl font-bold mb-2 text-white">Blog Platform</h3>
+                <p class="text-white">CMS with custom grid-based layouts.</p>
+            </div>
+            
+            <!-- Project 5 - Very tall item -->
+            <div class="row-span-3 bg-gradient-to-br from-gray-800 to-gray-600 rounded-2xl p-6 shadow-xl text-white">
+                <h3 class="text-2xl font-bold mb-3">Admin Panel</h3>
+                <p class="mb-4">Complete admin system with:</p>
+                <ul class="space-y-2 mb-4">
+                    <li class="flex items-center">
+                        <div class="w-2 h-2 bg-white rounded-full mr-2"></div>
+                        User management grid
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-2 h-2 bg-white rounded-full mr-2"></div>
+                        Statistics dashboard
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-2 h-2 bg-white rounded-full mr-2"></div>
+                        Report generation
+                    </li>
+                </ul>
+                <div class="grid grid-cols-3 gap-2 mt-6">
+                    <span class="bg-gray-700 px-2 py-1 rounded text-sm text-center">Vue.js</span>
+                    <span class="bg-gray-700 px-2 py-1 rounded text-sm text-center">Grid</span>
+                    <span class="bg-gray-700 px-2 py-1 rounded text-sm text-center">Charts</span>
+                </div>
+            </div>
+            
+            <!-- Project 6 - Regular item -->
+            <div class="bg-gradient-to-br from-yellow-400 to-amber-300 rounded-2xl p-6 shadow-xl">
+                <h3 class="text-xl font-bold mb-2">Landing Page</h3>
+                <p>Responsive design with creative grid.</p>
+            </div>
+            
+        </div>
+
+        <!-- Advanced Grid Gallery -->
+        <div class="mt-12">
+            <h2 class="text-2xl font-bold mb-6">Photo Gallery (Advanced Grid)</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Using aspect-ratio and object-fit with grid -->
+                <div class="col-span-2 md:col-span-2 row-span-2">
+                    <div class="bg-gradient-to-br from-indigo-500 to-purple-600 h-64 md:h-full rounded-2xl flex items-center justify-center">
+                        <span class="text-white text-xl font-bold">Featured Image</span>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-rose-500 to-pink-600 h-32 rounded-2xl flex items-center justify-center">
+                    <span class="text-white">Image 2</span>
+                </div>
+                
+                <div class="bg-gradient-to-br from-emerald-500 to-green-600 h-32 rounded-2xl flex items-center justify-center">
+                    <span class="text-white">Image 3</span>
+                </div>
+                
+                <div class="bg-gradient-to-br from-amber-500 to-orange-600 h-32 rounded-2xl flex items-center justify-center">
+                    <span class="text-white">Image 4</span>
+                </div>
+                
+                <div class="bg-gradient-to-br from-cyan-500 to-blue-600 h-32 rounded-2xl flex items-center justify-center">
+                    <span class="text-white">Image 5</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
